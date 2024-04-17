@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jie's Painting</title>
+        <style>
+
+        fieldset{
+	    border:none;
+	    /* border: 1px solid green; */
+	    padding:0;
+	    margin-bottom: 1.5rem;
+}
+        fieldset legend{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin-bottom:1rem;
+        background-color: #7b9e89;
+}
+        label{
+        display:block;
+        margin-bottom:1rem;
+}
+        input, select, textarea{
+	    font-family:'Fira Sans' Arial, Helvetica, sans-serif;
+	/* border:none;
+	    border-bottom: 1px solid blue; */
+	    border-radius: 0.2rem;
+	/* width:50ch; */
+}	
+        input, select{
+        margin-bottom:1rem;
+}
+        input:focus, select:focus{
+	    background-color: #58355e;
+}
+        input[type="radio"]{
+        cursor: pointer;
+
+}
+        input[type="radio"]+label{
+        display:inline;
+        cursor: pointer;
+
+}
+        input[type="submit"]{
+        background-color: #7b9e89;
+        color:#000;
+        font-size: 1.5rem;
+        font-weight:bolder;
+        padding:0.8rem;
+        cursor:pointer;
+        /* box-shadow: 10px 10px 10px indigo; */
+}
+        input[type="submit"]:hover{
+	    background-color: #58355e;
+}
+
+  </style>
+    </head>
+
+    <body>
+        <div class="header-container">
+            <h1>Jie's Painting</h1>
+            <h2> Website Build with HTML, CSS and JavaScript</h2>
+            <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+          </div>
+          <section class="container">
+       
+                <h2>Contact Us</h2>
+               
+            <div class="box">
+                <form method="get" action="formhandler.php">
+                    <fieldset>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                        
+                        <label for="fname">First Name</label>
+				        <input type="text" name="fname" id="fname">
+				
+				        <label for="lname">Last Name</label>
+				        <input type="text" name="lname" id="lname">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"required/>
+
+                        <label for="phone">Telephone Number</label>
+                        <input type="tel" id="phone" name="phone" minlength="9" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="xxx-xxx-xxxx format" placeholder="xxx-xxx-xxxx" required/>
+                        <!-- <small>xxx-xxx-xxxx format</small> -->
+                    </fieldset>
+                  
+                <fieldset>
+                <legend>Give Us Suggestions</legend>
+                  <textarea id="comment" name="comment" rows="8" cols="30"placeholder="leave a comment for us"></textarea>
+
+                <!-- </fieldset> <fieldset>
+                    <legend>Do you want to subscribe our Internet monthly report?</legend>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="interest">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="interest">
+                </fieldset> -->
+           
+                <fieldset>
+            
+                        
+                    <legend>Preferred Painting Category</legend>
+                    
+					<input type="radio" name="painting1" id="painting1" value="landscape painting" />
+                    <!-- <img src="Screenshot 2023-07-23 at 9.33.39 PM.png"alt="Christmas Tree"width="100"height="120"class="box"> -->
+					<label for="painting1"> Landscape Painting</label>
+					
+					<input type="radio" name="painting2" id="painting2" value="portrait painting" />
+                    <!-- <img src="Oil-Paiting7-1 copy.jpg"alt="Cat and flowers"width="100"height="120"class="box"> -->
+					<label for="painting2">Portrait Painting</label>
+					
+					<input type="radio" name="painting3" id="painting3" value="still life painting" />
+                    <!-- <img src="Oil Paiting3 copy.jpeg"alt="Flowers and Books"width="100"height="120"class="box"> -->
+					<label for="painting3">Still life Painting</label>
+					
+					<input type="radio" name="painting4" id="painting4" value="realistic painting" />
+                    <!-- <img src="Oil-Paiting4-1.jpg"alt="Water tank in the Forbidden City"width="120"height="120"class="box"> -->
+					<label for="painting4">Realistic Painting</label>
+
+                    <input type="radio" name="painting5" id="painting5" value="abstract painting" />
+                    <!-- <img src="Oil-Paiting4-1.jpg"alt="Water tank in the Forbidden City"width="120"height="120"class="box"> -->
+					<label for="painting5"Abstract Painting</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Acceptable Painting Price</legend>
+                    <label for="numprice" id="pricerow">Price</label>
+                    <input type="number" id="numprice" name="numprice" min="50" max="250" step="1" value="50"> 
+                    <input type="range" id="rangeprice" name="rangeprice" min="50" max="250" step="1" value="50">
+                    <output for="numprice" id="shippingprice">50 CA (250 RMB)</output>
+                </fieldset>
+                
+                <input id="submit" type="submit" value="Submit">
+
+            </fieldset>
+            
+                    
+            </form>
+                
+            </div>
+
+     </section>
+     
+        <footer>
+
+            <div class="Information">
+            <p>Information</p>
+            <p> Art is a lifelong passion and a way to calm the storm in my mind.</p>
+            </div>
+    
+            <nav>
+              <ul>
+              <p>Links</p>
+              <li><a href="https://www.myjieyang.com/beginner-painting-tutorial/introduce-oil-painting-materials">Introduce Oil Painting Materials</a></li>
+              <li><a href="https://www.myjieyang.com/beginner-painting-tutorial/mixing-color">Mixing Color</a></li>
+              <li><a href="https://www.myjieyang.com/about-me/contact-me">Contact Me</a></li>  
+              <li><a href="https://www.youtube.com/channel/UC0iGNH8FcBdj09TDw4PC71g" class="fa fa-youtube"></a></li>
+              <li><a href="https://www.instagram.com/roselovesmaxie/" class="fa fa-instagram"></a></li>
+    
+              </ul>
+            </nav>
+            <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.446072575795!2d-114.09270502438812!3d51.063315143049294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ff152d950ff%3A0x2143bc8e7397787f!2sSAIT%20Campus%20Centre!5e0!3m2!1szh-CN!2sca!4v1709694131540!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            <p class="copyright">Copyright © 2024 Jie Yang All Rights Reserved.</p>
+              
+      </footer>
+    
+    <script src="JS/script.js"></script>
+
+    </body>
+</html>
