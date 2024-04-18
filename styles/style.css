@@ -322,7 +322,7 @@ footer ul {
 
 @media screen and (max-width: 2500px) {
   .container{
-    background-color: lightgreen;
+    background-color: green;
     color:wheat;
   }
   main {
